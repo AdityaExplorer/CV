@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(to right, #0d0d0d, #1a1a1a);
+}
+/* Hide scrollbar background */
+body::-webkit-scrollbar {
+    width: 20px; /* Adjust scrollbar width */
+    background-color: transparent;
+}
+
+/* Style the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0000ff,black);
+    border-radius: 20px;
+}
+
+/* Optional: Add hover effect */
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ff5555, #5555ff);
+}
