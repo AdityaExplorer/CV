@@ -29,8 +29,9 @@ const HeroSection=()=>{
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap flex-row gap-5">
-                    <button className="p-4 bg-sky-500 text-xl rounded-full text-white cursor-pointer
+                    <div className="flex flex-wrap flex-row md:gap-5 gap-2">
+                    <button className="md:py-2 md:px-12 py-2 px-6 bg-sky-500 
+                    md:text-xl text-base rounded-full text-white cursor-pointer
                             hover:bg-gradient-to-r hover:from-sky-500 hover:to-red-900">
                             Connect with me
                     </button>

@@ -10,7 +10,7 @@ const Projects = () => {
         <h1 className="text-4xl md:text-8xl text-white text-center
         px-4 py-3 hover:underline decoration-4 underline-offset-4 cursor-pointer rounded-full mb-3
         " id="Projects">
-            Pojects 
+            Projects 
         </h1>
         <div>
         <motion.div 
@@ -18,7 +18,8 @@ const Projects = () => {
         transition={{duration:1}}
         whileInView={{opacity:1,x:0}}
         viewport={{once:true}}
-        className="flex flex-row gap-2 absolute md:right-[200px] md:top-[230%] right-[10px] top-[190vh] mb-12">
+        className="flex flex-row gap-2 absolute md:right-[50vh] md:top-[307vh] 
+        right-[25px] top-[260vh] mb-12">
             <button className="md:p-3 p-2 bg-sky-500 hover:bg-sky-400 text-white rounded-lg"><FaLessThan /></button>
             <button className="md:p-3 p-2 bg-sky-500 hover:bg-sky-400 text-white rounded-lg"><FaGreaterThan /></button>
         </motion.div>
