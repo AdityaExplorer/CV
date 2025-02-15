@@ -1,6 +1,7 @@
 import React from "react";
-import myImage from "../images/MYPortImage.jpeg";
-import { FaLessThan ,FaGreaterThan } from "react-icons/fa";
+import LandHost from "../images/LandHost.png";
+import BharatCafe from "../images/BharatCafe.png";
+import DataMang from "../images/DataMang.png";
 import {motion} from "framer-motion";
 
 const Projects = () => {
@@ -13,37 +14,59 @@ const Projects = () => {
             Projects 
         </h1>
         <div>
-        <motion.div 
-        initial={{opacity:0,x:200}} 
-        transition={{duration:1}}
-        whileInView={{opacity:1,x:0}}
-        viewport={{once:true}}
-        className="flex flex-row gap-2 absolute md:right-[50vh] md:top-[307vh] 
-        right-[25px] top-[260vh] mb-12">
-            <button className="md:p-3 p-2 bg-sky-500 hover:bg-sky-400 text-white rounded-lg"><FaLessThan /></button>
-            <button className="md:p-3 p-2 bg-sky-500 hover:bg-sky-400 text-white rounded-lg"><FaGreaterThan /></button>
-        </motion.div>
-
-
-            
-            
+        
+        {/* Project Content  */}
             <motion.div 
             initial={{opacity:0,x:200}} 
             transition={{duration:1}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:true}}
-            className=" p-4 flex gap-5 justify-center items-center flex-row  border-2 border-sky-500 rounded-3xl">
-                <div className="relative group">
-                    <img className="md:w-[500px] md:h-[500px]" src={myImage} alt="" />
-                    <p className="absolute inset-0 flex justify-center items-center  bg-opacity-60 
-                                text-white text-5xl opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
-                        <span className="bg-gradient-to-r from-sky-500 to-red-900 
-                        bg-clip-text text-transparent">This is my project</span>
-                    </p>
-                </div> 
+            className=" p-4  flex flex-wrap  gap-4">
+                {projectData.map((items,index)=>(
+                    <div 
+                    className="px-6 
+                    hover:border-2 border-sky-500 hover:rounded-3xl" 
+                    key={index}>
+                        <div className="py-10">
+                            <h2 
+                            className=" text-3xl text-center mb-3
+                            bg-gradient-to-r from-indigo-400 to-white bg-clip-text text-transparent">{items.name}
+                            </h2>
+                            <img className="h-50 w-3/4" src={items.image} alt="" />
+                            <p className="text-sky-500 mt-5">
+                                <a href={items.url} target="_blacn"  className="underline text-blue-400 hover:text-blue-600">
+                                    {items.url}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                ))}
+                    
             </motion.div>
         </div>
     </div>
     )
 }
 export default Projects;
+
+
+const projectData=[
+    {
+        id:'1',
+        name:'LandHost',
+        image:LandHost,
+        url:'https://landhost.vercel.app/'
+    },
+    {
+        id:'2',
+        name:'Bharat-Cafe',
+        image:BharatCafe,
+        url:'https://coffee-cafe-theta.vercel.app/'
+    },
+    {
+        id:'3',
+        name:'Data Management',
+        image:DataMang,
+        url:'https://github.com/AdityaExplorer/Data-Management'
+    },
+]

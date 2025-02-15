@@ -41,7 +41,7 @@ const Navbar = () => {
     className=" hidden md:flex text-xl gap-8 
     absolute left-1/2 transform -translate-x-1/2 
         ">
-          {["Home","About","Projects","Skills","Contact"].map((item,index)=>(
+          {["Home","About","Projects","Skills","Contact with me"].map((item,index)=>(
             <a href={`#${item}`} key={index} className="hover:underline decoration-4 underline-offset-4 
             decoration-sky-500 text-[2vw] md:text-2xl">
                 {item}
@@ -63,7 +63,7 @@ const Navbar = () => {
          text-white shadow-md p-5 flex flex-col gap-4
         bg-gradient-to-r from-[#0d0d0d] to-[#1a1a1a] overflow-auto'>
 
-          {["Home","About","Projects","Skills","Contact"].map((item)=>(
+          {["Home","About","Projects","Skills","Contact with me"].map((item)=>(
             <a href={`#${item}`} className={`hover:underline decoration-4 underline-offset-4 
             decoration-sky-500 text-[5vw]`}
             onClick={()=>setIsOpen(false)}>
