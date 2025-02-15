@@ -1,6 +1,7 @@
 import React from "react";
-import myImage from "../images/MyPortImage.jpeg";
+import myImage from "../images/MYPortImage.jpeg";
 import {motion} from "framer-motion";
+
 
 const HeroSection=()=>{
         return (

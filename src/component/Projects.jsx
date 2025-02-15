@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../images/MyPortImage.jpeg";
+import myImage from "../images/MYPortImage.jpeg";
 import { FaLessThan ,FaGreaterThan } from "react-icons/fa";
 import {motion} from "framer-motion";
 
