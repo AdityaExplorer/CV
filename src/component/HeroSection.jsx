@@ -1,7 +1,7 @@
 import React from "react";
 import myImage from "../images/MYPortImage.jpeg";
 import { motion } from "framer-motion";
-import myresume from "../assets/aditya_verma_resume.pdf";
+import myresume from "../assets/CV_Aditya_Verma.pdf";
 
 const HeroSection = () => {
   return (
