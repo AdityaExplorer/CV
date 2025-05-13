@@ -18,7 +18,8 @@ const Skills = () => {
     border-2 border-sky-500 rounded-4xl '>
       <div className='flex justify-center flex-wrap  md:gap-20 gap-5 items-center  md:px-14 md:py-14 p-7'>
         
-        {["API","Arduino","Arduino IDE","HTML","CSS","Javascript","Bootstrap","Tailwind CSS","React","Redux","SQL","Python","Django","Jupyter Nootbook","PyCharm","phpMyAdmin"].map((item,index)=>(
+        {["Excel","Power Query",'PViotTable',"SQL",,"Power Bi","Python","PostgreeSQL",
+        "API","Arduino","Arduino IDE","HTML","CSS","Javascript","Bootstrap","Tailwind CSS","Jupyter Nootbook","PyCharm","phpMyAdmin"].map((item,index)=>(
           <motion.div
           initial={{opactiy:0,x:-200}}
           transition={{duration:1}}

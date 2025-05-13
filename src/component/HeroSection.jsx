@@ -27,10 +27,10 @@ const HeroSection = () => {
             <span className="bg-gradient-to-r from-sky-500 to-red-800 bg-clip-text text-transparent">
               I'm Aditya Verma,
             </span>
-            passionate about front-end development and user experiences.
+            I enjoy working with others, learning new things, and growing through every experience.          
           </h1>
           <p className="text-gray-400 text-lg mt-4 font-[Inter]">
-            Crafting seamless and visually appealing web interfaces.
+            Inserting in doing project on Real-World-Datasets
           </p>
         </div>
 

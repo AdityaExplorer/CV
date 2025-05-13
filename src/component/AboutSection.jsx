@@ -14,7 +14,7 @@ const AboutSection = () => {
     <div className="flex flex-col md:flex-row justify-center 
     items-center gap-12 w-[80%] mx-auto mt-0 md:mt-12 mb-20
     border-2 border-sky-500 rounded-4xl
-    hover:bg-gradient-to-r hover:from-sky-500 hover:to-red-900 cursor-pointer
+     cursor-pointer
     ">
       {/* Left Side Content */}
       <motion.div 
@@ -40,7 +40,7 @@ const AboutSection = () => {
       className="max-w-lg text-center md:text-left text-base md:text-lg">
         {/* For Larger Screens */}
         <p className="text-white font-medium text-2xl leading-relaxed md:block hidden">
-            I’m <strong className="text-sky-500 ">Aditya</strong>, a skilled Full-Stack Developer with expertise in HTML, CSS, JavaScript, React, Redux, Tailwind, Bootstrap, Django, Python, SQL, Git, and GitHub. I am passionate about building efficient, scalable, and secure web applications.
+            I’m <strong className="text-sky-500 hover:text-gray-500 ">Aditya</strong>,
 
             I hold a B.Tech in Electronics and Communication Engineering from Lyallpur Khalsa College Technical Campus, Jalandhar, with an overall SGPA of 7.5/10.
 
@@ -48,7 +48,7 @@ const AboutSection = () => {
 
         {/* For Mobile Screens */}
         <p className="text-white font-medium leading-relaxed md:hidden text-center p-3">
-          I’m <strong className="text-blue-600">Aditya</strong>, a Full-Stack Developer skilled in React, Django, and SQL.  
+          I’m <strong className="text-blue-600">Aditya</strong>, a master in Excel,Power Querry , Power Bi and SQL.  
           B.Tech in ECE from Lyallpur Khalsa College (SGPA: 7.5/10).  
           Passionate about building secure and scalable applications.  
         </p>
